@@ -1,7 +1,18 @@
 const connection = require("../data/db");
 
 //Index
-function index(req, res) {}
+function index(req, res) {
+  const sql = "SELECT * FROM `db_movies`.`movies`";
+  connection.execute(sql, (err, result) => {
+    if (err) {
+      return res.status(500).json({
+        error: "query error",
+        message: `${sql}`,
+      });
+    }
+    res.json(result);
+  });
+}
 
 //Show
 function show(req, res) {}

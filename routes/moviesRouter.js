@@ -12,7 +12,7 @@ router.get("/:id", moviesControllers.show);
 router.post("/", moviesControllers.store);
 
 //Update
-router.pu("/:id", moviesControllers.update);
+router.put("/:id", moviesControllers.update);
 
 //Modify
 router.patch("/:id", moviesControllers.modify);
