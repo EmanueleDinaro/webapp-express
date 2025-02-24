@@ -1,0 +1,21 @@
+{
+  "name": "webapp-express",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/EmanueleDinaro/webapp-express#readme",
+  "bugs": {
+    "url": "https://github.com/EmanueleDinaro/webapp-express/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmanueleDinaro/webapp-express.git"
+  },
+  "license": "ISC",
+  "author": "Emanuele Dinaro",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "watch": "node --watch app.js"
+  }
+}
